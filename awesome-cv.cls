@@ -344,7 +344,9 @@
 
 % Defines writer's quote (optional)
 % Usage: \quote{<quote>}
-\renewcommand*{\quote}[1]{\def\@quote{#1}}
+\renewcommand*{\quote}[1]{\def\@quote{
+  \rotatebox{180}{#1}
+}}
 
 % Defines recipient's information (cover letter only)
 % Usage: \recipient{<recipient name>}{<recipient address>}
